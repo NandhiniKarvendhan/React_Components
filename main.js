@@ -1,19 +1,22 @@
-import "./projects.js";
+function App() {
+  const [data, setData] = React.useState(null);
+  const [loaded, setLoaded] = React.useState(false);
 
-window.addEventListener("load", () => {
-  createProjectList();
-});
-
-async function createProjectList() {
-  const response = await fetch("./projects.json");
-  const json = await response.json();
-  const projects = document.getElementById("projects");
-  console.log(json.projects);
-
-  json.projects.forEach((project) => {
-    const element = document.createElement("simple-project");
-    console.log(element);
-    element.project = project;
-    projects.appendChild(element);
-  });
+  React.useEffect(() => {
+    async function getData() {
+      const response = await fetch("./projects.json");
+      const json = await response.json();
+      setData(json);
+      setLoaded(true);
+    }
+    getData();
+  }, []);
+  return (
+    <>
+      {loaded &&
+        data.projects.map((project, i) => <Project data={project} key={i} />)}
+    </>
+  );
 }
+
+ReactDOM.render(<App />, document.getElementById("root"));
