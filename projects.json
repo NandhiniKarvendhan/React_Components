@@ -1,0 +1,36 @@
+{
+    "projects" : [
+        {
+            "title": "Calculator",
+            "description": "In this project, we are going to create simple calculator to perform basic calculations such as addition, subtraction, multiplication and division.",
+            "github": "https://github.com/NandhiniKarvendhan/Projects/tree/main/Calculator",
+            "demo": "https://nandhinikarvendhan.github.io/Projects/Calculator/"
+
+        },
+        {
+            "title": "New Year Countdown",
+            "description":"In this project, Countdown for upcoming new year 2023 is displayed by the number of days, hours, minutes and seconds.",
+            "github": "https://github.com/NandhiniKarvendhan/Projects/tree/main/New_Year_Countdown",
+            "demo": "https://nandhinikarvendhan.github.io/Projects/New_Year_Countdown/"
+        },
+        {
+            "title": "Tic-Tac-Toe",
+            "description":"Tic Tac Toe is a two-player game created using JavaScript in which the objective is to take turns and mark the correct spaces in a 3x3 grid.",
+            "github": "https://github.com/NandhiniKarvendhan/Projects/tree/main/Tic-Tac-Toe",
+            "demo": "https://nandhinikarvendhan.github.io/Projects/Tic-Tac-Toe/"
+
+        },
+        {
+            "title": "Emoji Rating",
+            "description": "In this project, we are going to create rating indicated by five stars, the highest number of stars (five stars) indicating the best quality. Each star displays different types of emojis (from angry to laughing).",
+            "github": "https://github.com/NandhiniKarvendhan/Projects/tree/main/Emoji_rating",
+            "demo": "https://nandhinikarvendhan.github.io/Projects/Emoji_rating/"
+        },
+        {
+            "title": "Animated Search Bar",
+            "description": "This project creates animated search bar using simple javascript.",
+            "github": "https://github.com/NandhiniKarvendhan/Projects/tree/main/Animated_search_bar",
+            "demo": "https://nandhinikarvendhan.github.io/Projects/Animated_search_bar/"
+        }
+    ]
+}
