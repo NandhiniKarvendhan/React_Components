@@ -14,7 +14,15 @@ function App() {
   return (
     <>
       {loaded &&
-        data.projects.map((project, i) => <Project data={project} key={i} />)}
+        data.projects.map((project, i) => (
+          <simple-project
+            title={project.title}
+            description={project.description}
+            github={project.github}
+            demo={project.demo}
+            key={i}
+          />
+        ))}
     </>
   );
 }
